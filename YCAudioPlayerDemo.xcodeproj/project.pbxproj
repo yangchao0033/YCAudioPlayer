@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17816FEE1BF1C82D00B4F105 /* superYang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17816FED1BF1C82D00B4F105 /* superYang.jpg */; settings = {ASSET_TAGS = (); }; };
+		17816FF01BF1C83600B4F105 /* Katy Perry - Roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17816FEF1BF1C83600B4F105 /* Katy Perry - Roar.mp3 */; settings = {ASSET_TAGS = (); }; };
+		17CBBD781BF1C397004B6B36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBBD771BF1C397004B6B36 /* main.m */; };
+		17CBBD7B1BF1C397004B6B36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBBD7A1BF1C397004B6B36 /* AppDelegate.m */; };
+		17CBBD7E1BF1C397004B6B36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBBD7D1BF1C397004B6B36 /* ViewController.m */; };
+		17CBBD811BF1C397004B6B36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CBBD7F1BF1C397004B6B36 /* Main.storyboard */; };
+		17CBBD831BF1C397004B6B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CBBD821BF1C397004B6B36 /* Assets.xcassets */; };
+		17CBBD861BF1C397004B6B36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CBBD841BF1C397004B6B36 /* LaunchScreen.storyboard */; };
+		17CBBD911BF1C397004B6B36 /* YCAudioPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBBD901BF1C397004B6B36 /* YCAudioPlayerDemoTests.m */; };
+		17CBBD9C1BF1C397004B6B36 /* YCAudioPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBBD9B1BF1C397004B6B36 /* YCAudioPlayerDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17CBBD8D1BF1C397004B6B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17CBBD6B1BF1C397004B6B36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17CBBD721BF1C397004B6B36;
+			remoteInfo = YCAudioPlayerDemo;
+		};
+		17CBBD981BF1C397004B6B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17CBBD6B1BF1C397004B6B36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17CBBD721BF1C397004B6B36;
+			remoteInfo = YCAudioPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17816FED1BF1C82D00B4F105 /* superYang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superYang.jpg; sourceTree = "<group>"; };
+		17816FEF1BF1C83600B4F105 /* Katy Perry - Roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Katy Perry - Roar.mp3"; sourceTree = "<group>"; };
+		17CBBD731BF1C397004B6B36 /* YCAudioPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCAudioPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CBBD771BF1C397004B6B36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17CBBD791BF1C397004B6B36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17CBBD7A1BF1C397004B6B36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17CBBD7C1BF1C397004B6B36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17CBBD7D1BF1C397004B6B36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		17CBBD801BF1C397004B6B36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17CBBD821BF1C397004B6B36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17CBBD851BF1C397004B6B36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17CBBD871BF1C397004B6B36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17CBBD8C1BF1C397004B6B36 /* YCAudioPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCAudioPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CBBD901BF1C397004B6B36 /* YCAudioPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCAudioPlayerDemoTests.m; sourceTree = "<group>"; };
+		17CBBD921BF1C397004B6B36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17CBBD971BF1C397004B6B36 /* YCAudioPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCAudioPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CBBD9B1BF1C397004B6B36 /* YCAudioPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCAudioPlayerDemoUITests.m; sourceTree = "<group>"; };
+		17CBBD9D1BF1C397004B6B36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17CBBD701BF1C397004B6B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CBBD891BF1C397004B6B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CBBD941BF1C397004B6B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17CBBD6A1BF1C397004B6B36 = {
+			isa = PBXGroup;
+			children = (
+				17CBBD751BF1C397004B6B36 /* YCAudioPlayerDemo */,
+				17CBBD8F1BF1C397004B6B36 /* YCAudioPlayerDemoTests */,
+				17CBBD9A1BF1C397004B6B36 /* YCAudioPlayerDemoUITests */,
+				17CBBD741BF1C397004B6B36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17CBBD741BF1C397004B6B36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17CBBD731BF1C397004B6B36 /* YCAudioPlayerDemo.app */,
+				17CBBD8C1BF1C397004B6B36 /* YCAudioPlayerDemoTests.xctest */,
+				17CBBD971BF1C397004B6B36 /* YCAudioPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17CBBD751BF1C397004B6B36 /* YCAudioPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				17CBBD791BF1C397004B6B36 /* AppDelegate.h */,
+				17CBBD7A1BF1C397004B6B36 /* AppDelegate.m */,
+				17CBBD7C1BF1C397004B6B36 /* ViewController.h */,
+				17CBBD7D1BF1C397004B6B36 /* ViewController.m */,
+				17CBBD7F1BF1C397004B6B36 /* Main.storyboard */,
+				17CBBD821BF1C397004B6B36 /* Assets.xcassets */,
+				17CBBD841BF1C397004B6B36 /* LaunchScreen.storyboard */,
+				17CBBD871BF1C397004B6B36 /* Info.plist */,
+				17CBBD761BF1C397004B6B36 /* Supporting Files */,
+			);
+			path = YCAudioPlayerDemo;
+			sourceTree = "<group>";
+		};
+		17CBBD761BF1C397004B6B36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17816FEF1BF1C83600B4F105 /* Katy Perry - Roar.mp3 */,
+				17816FED1BF1C82D00B4F105 /* superYang.jpg */,
+				17CBBD771BF1C397004B6B36 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17CBBD8F1BF1C397004B6B36 /* YCAudioPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				17CBBD901BF1C397004B6B36 /* YCAudioPlayerDemoTests.m */,
+				17CBBD921BF1C397004B6B36 /* Info.plist */,
+			);
+			path = YCAudioPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		17CBBD9A1BF1C397004B6B36 /* YCAudioPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17CBBD9B1BF1C397004B6B36 /* YCAudioPlayerDemoUITests.m */,
+				17CBBD9D1BF1C397004B6B36 /* Info.plist */,
+			);
+			path = YCAudioPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17CBBD721BF1C397004B6B36 /* YCAudioPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CBBDA01BF1C397004B6B36 /* Build configuration list for PBXNativeTarget "YCAudioPlayerDemo" */;
+			buildPhases = (
+				17CBBD6F1BF1C397004B6B36 /* Sources */,
+				17CBBD701BF1C397004B6B36 /* Frameworks */,
+				17CBBD711BF1C397004B6B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YCAudioPlayerDemo;
+			productName = YCAudioPlayerDemo;
+			productReference = 17CBBD731BF1C397004B6B36 /* YCAudioPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17CBBD8B1BF1C397004B6B36 /* YCAudioPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CBBDA31BF1C397004B6B36 /* Build configuration list for PBXNativeTarget "YCAudioPlayerDemoTests" */;
+			buildPhases = (
+				17CBBD881BF1C397004B6B36 /* Sources */,
+				17CBBD891BF1C397004B6B36 /* Frameworks */,
+				17CBBD8A1BF1C397004B6B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17CBBD8E1BF1C397004B6B36 /* PBXTargetDependency */,
+			);
+			name = YCAudioPlayerDemoTests;
+			productName = YCAudioPlayerDemoTests;
+			productReference = 17CBBD8C1BF1C397004B6B36 /* YCAudioPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17CBBD961BF1C397004B6B36 /* YCAudioPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CBBDA61BF1C397004B6B36 /* Build configuration list for PBXNativeTarget "YCAudioPlayerDemoUITests" */;
+			buildPhases = (
+				17CBBD931BF1C397004B6B36 /* Sources */,
+				17CBBD941BF1C397004B6B36 /* Frameworks */,
+				17CBBD951BF1C397004B6B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17CBBD991BF1C397004B6B36 /* PBXTargetDependency */,
+			);
+			name = YCAudioPlayerDemoUITests;
+			productName = YCAudioPlayerDemoUITests;
+			productReference = 17CBBD971BF1C397004B6B36 /* YCAudioPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17CBBD6B1BF1C397004B6B36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "杨超";
+				TargetAttributes = {
+					17CBBD721BF1C397004B6B36 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4SURL4UGYU;
+					};
+					17CBBD8B1BF1C397004B6B36 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4SURL4UGYU;
+						TestTargetID = 17CBBD721BF1C397004B6B36;
+					};
+					17CBBD961BF1C397004B6B36 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4SURL4UGYU;
+						TestTargetID = 17CBBD721BF1C397004B6B36;
+					};
+				};
+			};
+			buildConfigurationList = 17CBBD6E1BF1C397004B6B36 /* Build configuration list for PBXProject "YCAudioPlayerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17CBBD6A1BF1C397004B6B36;
+			productRefGroup = 17CBBD741BF1C397004B6B36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17CBBD721BF1C397004B6B36 /* YCAudioPlayerDemo */,
+				17CBBD8B1BF1C397004B6B36 /* YCAudioPlayerDemoTests */,
+				17CBBD961BF1C397004B6B36 /* YCAudioPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17CBBD711BF1C397004B6B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17816FF01BF1C83600B4F105 /* Katy Perry - Roar.mp3 in Resources */,
+				17CBBD861BF1C397004B6B36 /* LaunchScreen.storyboard in Resources */,
+				17CBBD831BF1C397004B6B36 /* Assets.xcassets in Resources */,
+				17816FEE1BF1C82D00B4F105 /* superYang.jpg in Resources */,
+				17CBBD811BF1C397004B6B36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CBBD8A1BF1C397004B6B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CBBD951BF1C397004B6B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17CBBD6F1BF1C397004B6B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CBBD7E1BF1C397004B6B36 /* ViewController.m in Sources */,
+				17CBBD7B1BF1C397004B6B36 /* AppDelegate.m in Sources */,
+				17CBBD781BF1C397004B6B36 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CBBD881BF1C397004B6B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CBBD911BF1C397004B6B36 /* YCAudioPlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CBBD931BF1C397004B6B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CBBD9C1BF1C397004B6B36 /* YCAudioPlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17CBBD8E1BF1C397004B6B36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17CBBD721BF1C397004B6B36 /* YCAudioPlayerDemo */;
+			targetProxy = 17CBBD8D1BF1C397004B6B36 /* PBXContainerItemProxy */;
+		};
+		17CBBD991BF1C397004B6B36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17CBBD721BF1C397004B6B36 /* YCAudioPlayerDemo */;
+			targetProxy = 17CBBD981BF1C397004B6B36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17CBBD7F1BF1C397004B6B36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17CBBD801BF1C397004B6B36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17CBBD841BF1C397004B6B36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17CBBD851BF1C397004B6B36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17CBBD9E1BF1C397004B6B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17CBBD9F1BF1C397004B6B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17CBBDA11BF1C397004B6B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YCAudioPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.SuperYang.www.YCAudioPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17CBBDA21BF1C397004B6B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YCAudioPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.SuperYang.www.YCAudioPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		17CBBDA41BF1C397004B6B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YCAudioPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.SuperYang.www.YCAudioPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YCAudioPlayerDemo.app/YCAudioPlayerDemo";
+			};
+			name = Debug;
+		};
+		17CBBDA51BF1C397004B6B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YCAudioPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.SuperYang.www.YCAudioPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YCAudioPlayerDemo.app/YCAudioPlayerDemo";
+			};
+			name = Release;
+		};
+		17CBBDA71BF1C397004B6B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YCAudioPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.SuperYang.www.YCAudioPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YCAudioPlayerDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		17CBBDA81BF1C397004B6B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YCAudioPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.SuperYang.www.YCAudioPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YCAudioPlayerDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17CBBD6E1BF1C397004B6B36 /* Build configuration list for PBXProject "YCAudioPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CBBD9E1BF1C397004B6B36 /* Debug */,
+				17CBBD9F1BF1C397004B6B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CBBDA01BF1C397004B6B36 /* Build configuration list for PBXNativeTarget "YCAudioPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CBBDA11BF1C397004B6B36 /* Debug */,
+				17CBBDA21BF1C397004B6B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CBBDA31BF1C397004B6B36 /* Build configuration list for PBXNativeTarget "YCAudioPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CBBDA41BF1C397004B6B36 /* Debug */,
+				17CBBDA51BF1C397004B6B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CBBDA61BF1C397004B6B36 /* Build configuration list for PBXNativeTarget "YCAudioPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CBBDA71BF1C397004B6B36 /* Debug */,
+				17CBBDA81BF1C397004B6B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17CBBD6B1BF1C397004B6B36 /* Project object */;
+}
