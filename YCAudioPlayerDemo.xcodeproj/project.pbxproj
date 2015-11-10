@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		17816FEE1BF1C82D00B4F105 /* superYang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17816FED1BF1C82D00B4F105 /* superYang.jpg */; settings = {ASSET_TAGS = (); }; };
 		17816FF01BF1C83600B4F105 /* Katy Perry - Roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17816FEF1BF1C83600B4F105 /* Katy Perry - Roar.mp3 */; settings = {ASSET_TAGS = (); }; };
+		17816FF51BF1C9F900B4F105 /* YCAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17816FF31BF1C9F900B4F105 /* YCAudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		17816FF61BF1C9F900B4F105 /* YCAudioPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17816FF41BF1C9F900B4F105 /* YCAudioPlayer.xib */; settings = {ASSET_TAGS = (); }; };
 		17CBBD781BF1C397004B6B36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBBD771BF1C397004B6B36 /* main.m */; };
 		17CBBD7B1BF1C397004B6B36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBBD7A1BF1C397004B6B36 /* AppDelegate.m */; };
 		17CBBD7E1BF1C397004B6B36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBBD7D1BF1C397004B6B36 /* ViewController.m */; };
@@ -39,6 +41,9 @@
 /* Begin PBXFileReference section */
 		17816FED1BF1C82D00B4F105 /* superYang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superYang.jpg; sourceTree = "<group>"; };
 		17816FEF1BF1C83600B4F105 /* Katy Perry - Roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Katy Perry - Roar.mp3"; sourceTree = "<group>"; };
+		17816FF21BF1C9F900B4F105 /* YCAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCAudioPlayer.h; sourceTree = "<group>"; };
+		17816FF31BF1C9F900B4F105 /* YCAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAudioPlayer.m; sourceTree = "<group>"; };
+		17816FF41BF1C9F900B4F105 /* YCAudioPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCAudioPlayer.xib; sourceTree = "<group>"; };
 		17CBBD731BF1C397004B6B36 /* YCAudioPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCAudioPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CBBD771BF1C397004B6B36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17CBBD791BF1C397004B6B36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17816FF11BF1C9F900B4F105 /* YCAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				17816FF21BF1C9F900B4F105 /* YCAudioPlayer.h */,
+				17816FF31BF1C9F900B4F105 /* YCAudioPlayer.m */,
+				17816FF41BF1C9F900B4F105 /* YCAudioPlayer.xib */,
+			);
+			path = YCAudioPlayer;
+			sourceTree = "<group>";
+		};
 		17CBBD6A1BF1C397004B6B36 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +120,7 @@
 		17CBBD751BF1C397004B6B36 /* YCAudioPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				17816FF11BF1C9F900B4F105 /* YCAudioPlayer */,
 				17CBBD791BF1C397004B6B36 /* AppDelegate.h */,
 				17CBBD7A1BF1C397004B6B36 /* AppDelegate.m */,
 				17CBBD7C1BF1C397004B6B36 /* ViewController.h */,
@@ -253,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17816FF01BF1C83600B4F105 /* Katy Perry - Roar.mp3 in Resources */,
+				17816FF61BF1C9F900B4F105 /* YCAudioPlayer.xib in Resources */,
 				17CBBD861BF1C397004B6B36 /* LaunchScreen.storyboard in Resources */,
 				17CBBD831BF1C397004B6B36 /* Assets.xcassets in Resources */,
 				17816FEE1BF1C82D00B4F105 /* superYang.jpg in Resources */,
@@ -282,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17CBBD7E1BF1C397004B6B36 /* ViewController.m in Sources */,
+				17816FF51BF1C9F900B4F105 /* YCAudioPlayer.m in Sources */,
 				17CBBD7B1BF1C397004B6B36 /* AppDelegate.m in Sources */,
 				17CBBD781BF1C397004B6B36 /* main.m in Sources */,
 			);
