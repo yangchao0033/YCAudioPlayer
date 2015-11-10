@@ -22,5 +22,10 @@
 4. 支持控件显示和隐藏的转场动画
 5. 实时显示歌曲播放时间与总时间
 
+## 效果展示
+***
+![效果展示](https://github.com/yangchao0033/YCAudioPlayer/blob/master/gif%E9%85%8D%E5%9B%BE.gif)
+
+
 更多功能敬请期待。。。
 
