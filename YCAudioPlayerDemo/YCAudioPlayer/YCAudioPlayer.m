@@ -100,7 +100,7 @@ static NSTimeInterval kTitleDisplayDutation = 10;
     knowHowToPlay = YES;
     self.prograssTapped = !self.prograssTapped;
     self.playControlPrograss.hidden = !self.prograssTapped;
-    self.tipsLbl.text = @"长按滑钮并滑动";
+    self.tipsLbl.text = @"长按滑动滑钮 双击隐藏滑钮";
     [self insertSubview:self.playControlPrograss aboveSubview:self.tipsLbl];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:1.0 animations:^{
