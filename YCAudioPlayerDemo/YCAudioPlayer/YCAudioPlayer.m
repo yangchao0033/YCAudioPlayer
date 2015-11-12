@@ -69,7 +69,6 @@ static NSTimeInterval kTitleDisplayDutation = 10;
     [doubleTapGestureRecognizer setNumberOfTapsRequired:2];
     [player.tapControlBtn addGestureRecognizer:doubleTapGestureRecognizer];
     player.endTimeLbl.text = player.endTime;
-    [player playMusic:nil];
     return player;
 }
 
@@ -85,7 +84,8 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 
 - (IBAction)playMusic:(UIBarButtonItem *)sender {
 //    NSLog(@"%s", __func__);
-    /** 暂停定时器 */
+    /** 打开定时器 */
+    [self.timer setFireDate:[NSDate date]];
     if (self.showPrograss.progress == 1) {
         self.showPrograss.progress = self.playControlPrograss.value = 0;
     }
