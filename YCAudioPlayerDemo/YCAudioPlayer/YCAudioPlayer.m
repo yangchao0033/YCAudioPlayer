@@ -18,8 +18,10 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 @property (nonatomic, strong) UIWindow *keyWindow;
 /** 起始时间 */
 @property (weak, nonatomic) IBOutlet UILabel *benginTimeLbl;
+@property (nonatomic, copy) NSString *beginTime;
 /** 截止时间 */
 @property (weak, nonatomic) IBOutlet UILabel *endTimeLbl;
+@property (nonatomic, copy) NSString *endTime;
 /** 进度条 */
 @property (weak, nonatomic) IBOutlet UIProgressView *showPrograss;
 /** 进度控制 */
@@ -66,7 +68,8 @@ static NSTimeInterval kTitleDisplayDutation = 10;
     player.tapGes = doubleTapGestureRecognizer;
     [doubleTapGestureRecognizer setNumberOfTapsRequired:2];
     [player.tapControlBtn addGestureRecognizer:doubleTapGestureRecognizer];
-    
+    player.endTimeLbl.text = player.endTime;
+    [player playMusic:nil];
     return player;
 }
 
@@ -83,11 +86,13 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 - (IBAction)playMusic:(UIBarButtonItem *)sender {
 //    NSLog(@"%s", __func__);
     /** 暂停定时器 */
-    [self.timer setFireDate:[NSDate date]];
     if (self.showPrograss.progress == 1) {
         self.showPrograss.progress = self.playControlPrograss.value = 0;
     }
     [self.avAudioPlayer play];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self.timer setFireDate:[NSDate date]];
+//    });
 }
 
 - (IBAction)pauseMusic:(UIBarButtonItem *)sender {
@@ -118,7 +123,7 @@ static NSTimeInterval kTitleDisplayDutation = 10;
     }
     self.showPrograss.progress = sender.value;
     self.avAudioPlayer.currentTime = sender.value * self.avAudioPlayer.duration;
-    self.benginTimeLbl.text = [NSString stringWithFormat:@"%.2d:%.2d", (int)self.avAudioPlayer.currentTime / 60 , (int)self.avAudioPlayer.currentTime % 60];
+    self.benginTimeLbl.text = self.beginTime;
 //    self.endTimeLbl.text = [NSString stringWithFormat:@"%.2d:%.2d", (int)self.avAudioPlayer.duration/60, (int)self.avAudioPlayer.duration % 60];
 }
 
@@ -174,10 +179,13 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 - (void)playProgress
 {
     //通过音频播放时长的百分比,给progressview进行赋值;
-    self.showPrograss.progress = self.playControlPrograss.value = self.avAudioPlayer.currentTime/self.avAudioPlayer.duration;
-//    NSLog(@"%.2d:%.2d====%.2d:%.2d", (int)self.avAudioPlayer.currentTime / 60 , (int)self.avAudioPlayer.currentTime % 60, (int)self.avAudioPlayer.duration/60, (int)self.avAudioPlayer.duration % 60);
-    self.benginTimeLbl.text = [NSString stringWithFormat:@"%.2d:%.2d", (int)self.avAudioPlayer.currentTime / 60 , (int)self.avAudioPlayer.currentTime % 60];
-    self.endTimeLbl.text = [NSString stringWithFormat:@"%.2d:%.2d", (int)self.avAudioPlayer.duration/60, (int)self.avAudioPlayer.duration % 60];
+//    if (self.avAudioPlayer.currentTime < self.avAudioPlayer.duration) {
+        self.showPrograss.progress = self.playControlPrograss.value = self.avAudioPlayer.currentTime/self.avAudioPlayer.duration;
+        self.benginTimeLbl.text = self.beginTime;
+//    } else {
+//        self.benginTimeLbl.text = @"00:00";
+//        self.showPrograss.progress = self.playControlPrograss.value = 0;
+//    }
 }
 
 
@@ -275,7 +283,7 @@ static NSTimeInterval kTitleDisplayDutation = 10;
         //设置代理
         _avAudioPlayer.delegate = self;
         //设置初始音量大小
-         _avAudioPlayer.volume = 1;
+         _avAudioPlayer.volume = 1.0;
         //设置音乐播放次数  -1为一直循环
         _avAudioPlayer.numberOfLoops = 0;
         //预播放
@@ -302,5 +310,13 @@ static NSTimeInterval kTitleDisplayDutation = 10;
         [self addSubview:_tipsLbl];
     }
     return _tipsLbl;
+}
+- (NSString *)beginTime
+{
+    return [NSString stringWithFormat:@"%.2d:%.2d", (int)self.avAudioPlayer.currentTime / 60 , (int)self.avAudioPlayer.currentTime % 60];
+}
+
+- (NSString *)endTime {
+    return [NSString stringWithFormat:@"%.2d:%.2d", (int)self.avAudioPlayer.duration/60, (int)self.avAudioPlayer.duration % 60];
 }
 @end
