@@ -179,10 +179,11 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 - (void)playProgress
 {
     //通过音频播放时长的百分比,给progressview进行赋值;
-//    if (self.avAudioPlayer.currentTime < self.avAudioPlayer.duration) {
+    if (self.avAudioPlayer.currentTime < self.avAudioPlayer.duration) {
         self.showPrograss.progress = self.playControlPrograss.value = self.avAudioPlayer.currentTime/self.avAudioPlayer.duration;
         self.benginTimeLbl.text = self.beginTime;
-//    } else {
+    }
+//    else {
 //        self.benginTimeLbl.text = @"00:00";
 //        self.showPrograss.progress = self.playControlPrograss.value = 0;
 //    }
