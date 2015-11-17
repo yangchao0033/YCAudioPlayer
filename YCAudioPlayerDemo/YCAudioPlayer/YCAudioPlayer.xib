@@ -47,7 +47,7 @@
                 </toolbar>
                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bjX-nD-c8o">
                     <rect key="frame" x="6" y="84" width="297" height="2"/>
-                    <color key="backgroundColor" patternImage="562198DA-C629-4865-BCB8-7B078E5E52D5" colorSpace="pattern"/>
+                    <color key="backgroundColor" patternImage="130220F9-CFF6-4ABA-9B3B-5FBA1961EF1B" colorSpace="pattern"/>
                 </progressView>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cky-hu-FSQ">
                     <rect key="frame" x="4" y="70" width="301" height="31"/>
@@ -114,7 +114,7 @@
         </view>
     </objects>
     <resources>
-        <image name="562198DA-C629-4865-BCB8-7B078E5E52D5" width="512" height="512">
+        <image name="130220F9-CFF6-4ABA-9B3B-5FBA1961EF1B" width="512" height="512">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
