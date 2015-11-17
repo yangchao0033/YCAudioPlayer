@@ -34,6 +34,8 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 @property (nonatomic, strong) AVAudioPlayer *avAudioPlayer;
 /** 刷新进度条使用 */
 @property (nonatomic, strong) NSTimer *timer;
+/** 刷新进度条使用 */
+@property (nonatomic, strong) CADisplayLink *link;
 /** 播放路径 */
 @property (nonatomic, strong) NSURL *url;
 /** 控制面板 */
@@ -76,7 +78,8 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 - (IBAction)stopMusic:(UIButton *)sender {
 //    NSLog(@"%s", __func__);
     [self.avAudioPlayer stop];
-    [self.timer setFireDate:[NSDate distantFuture]];
+//    [self.timer setFireDate:[NSDate distantFuture]];
+    self.link.paused = YES;
     self.avAudioPlayer.currentTime = 0;
     self.showPrograss.progress = self.playControlPrograss.value = 0;
     self.benginTimeLbl.text = @"00:00";
@@ -85,7 +88,8 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 - (IBAction)playMusic:(UIBarButtonItem *)sender {
 //    NSLog(@"%s", __func__);
     /** 打开定时器 */
-    [self.timer setFireDate:[NSDate date]];
+//    [self.timer setFireDate:[NSDate date]];
+    self.link.paused = NO;
     if (self.showPrograss.progress == 1) {
         self.showPrograss.progress = self.playControlPrograss.value = 0;
     }
@@ -98,6 +102,7 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 - (IBAction)pauseMusic:(UIBarButtonItem *)sender {
 //    NSLog(@"%s", __func__);
     [self.timer setFireDate:[NSDate distantFuture]];
+    self.link.paused = YES;
     [self.avAudioPlayer pause];
 }
 
@@ -135,10 +140,13 @@ static NSTimeInterval kTitleDisplayDutation = 10;
     self.frame = frame;
     [self.keyWindow addSubview:self.bgView];
     [self.bgView addSubview:self];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self
-                                            selector:@selector(playProgress)
-                                            userInfo:nil repeats:YES];;
-    [self.timer setFireDate:[NSDate distantFuture]];
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self
+//                                            selector:@selector(playProgress)
+//                                            userInfo:nil repeats:YES];
+    self.link = [CADisplayLink displayLinkWithTarget:self selector:@selector(playProgress)];
+    [self.link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    self.link.paused = YES;
+//    [self.timer setFireDate:[NSDate distantFuture]];
     [UIView animateWithDuration:0.2f animations:^{
         self.bgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6f];
     } completion:nil];
@@ -169,7 +177,8 @@ static NSTimeInterval kTitleDisplayDutation = 10;
         self.bgView.alpha = 0.0f;
     } completion:^(BOOL finished) {
         [self.avAudioPlayer stop];
-        [self.timer invalidate];
+//        [self.timer invalidate];
+        [self.link invalidate];
         [self.bgView removeFromSuperview];
     }];
 }
@@ -244,7 +253,8 @@ static NSTimeInterval kTitleDisplayDutation = 10;
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
 //    [self.timer invalidate]; //NSTimer暂停   invalidate  使...无效;
-    [self.timer setFireDate:[NSDate distantFuture]];
+//    [self.timer setFireDate:[NSDate distantFuture]];
+    self.link.paused = YES;
 }
 
 - (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer*)player error:(NSError *)error{
